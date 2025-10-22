@@ -1,0 +1,182 @@
+/* =========================
+   Variables globales
+   ========================= */
+:root{
+    /* Couleurs */
+    --ink:#ffffff;
+    --muted:rgba(255,255,255,.85);
+    --card-bg:#ffffff;
+    --card-ink:#0f172a;
+
+    /* Effets / dimensions */
+    --shadow:0 10px 24px rgba(0,0,0,.35);
+    --radius:12px;
+    --maxw:900px;          /* largeur centrale (logos de section + grille) */
+
+    /* Cartes identiques : hauteurs figées */
+    --card-h:420px;        /* hauteur totale d'une carte */
+    --body-h:140px;        /* hauteur du bloc texte */
+    --media-pad:18px;      /* padding de la zone image */
+}
+
+/* =========================
+   Base & arrière-plan
+   ========================= */
+*{ box-sizing: border-box; }
+html,body{ height:100%; margin:0; }
+
+body{
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans";
+    color:var(--ink);
+    background:url("images/fonds.jpg") no-repeat center center fixed;
+    background-size:cover;
+}
+/* Overlay sombre pour lisibilité */
+body::before{
+    content:""; position:fixed; inset:0; z-index:-1;
+    background: rgba(0,0,0,.5);
+}
+
+/* =========================
+   Logo principal tout en haut
+   ========================= */
+.site-logo{ text-align:center; margin:20px 0 10px; }
+.site-logo .logo{ max-width:600px; width:100%; height:auto; }
+
+/* =========================
+   Intro (hero)
+   ========================= */
+.hero{ text-align:center; padding:20px; }
+.hero h1{
+    margin:0 0 12px;
+    font-size:clamp(2rem,1.2rem + 2.2vw,2.8rem);
+    text-shadow:2px 2px 5px rgba(0,0,0,.7);
+}
+.hero p{
+    margin:0 auto; max-width:800px;
+    font-size:1.05rem; line-height:1.6; color:var(--muted);
+    text-shadow:1px 1px 4px rgba(0,0,0,.55);
+}
+
+.section p {
+    text-align: center;
+    margin: 20px auto 40px; /* haut = 20px, bas = 40px */
+    max-width: 900px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-shadow:2px 2px 5px rgba(0,0,0,.7);
+}
+
+
+/* =========================
+   Sections & logos de section
+   ========================= */
+.section{ padding:28px 20px; text-align:center; }
+
+.section-logo{ text-align:center; margin:0 auto 18px; }
+.section-logo img{ max-width:500px; width:100%; height:auto; }
+
+/* =========================
+   Grille des cartes (3 → 2 → 1)
+   ========================= */
+.cards, .cards-square{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:22px;
+    max-width:var(--maxw);
+    margin:0 auto;
+    align-items:stretch;      /* cellules mêmes hauteurs */
+}
+
+/* =========================
+   Carte = 2 zones (image + texte)
+   ========================= */
+/* Carte = 2 zones (image + texte) */
+/* Carte = bloc transparent */
+/* Carte = bloc transparent */
+.card, .card-compact {
+    display: flex;
+    flex-direction: column;
+    height: var(--card-h);
+    background: rgba(255, 255, 255, 0.55); /* carte entière légèrement transparente */
+    color: var(--card-ink);
+    border-radius: var(--radius);
+    overflow: hidden; /* coupe tout ce qui dépasse, surtout l'image */
+    box-shadow: var(--shadow);
+    transition: transform .16s ease, box-shadow .16s ease;
+}
+
+.card:hover, .card-compact:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0,0,0,.4);
+}
+
+/* Zone image */
+.card-media {
+    height: calc(var(--card-h) - var(--body-h));
+    background: transparent;
+    display: grid;
+    place-items: center;
+    padding: var(--media-pad);
+    overflow: hidden;               /* empêche l'image de déborder */
+}
+
+.card-media img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;            /* l'image reste contenue */
+    display: block;
+}
+
+/* Zone texte */
+.card-body {
+    height: var(--body-h);
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    background: transparent;
+}
+
+.card-body .role {
+    margin: 0 0 6px;
+    font-size: .95rem;
+    font-weight: 800;
+    color: #374151;
+}
+
+.card-body .fullname {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: #111; /* noir quasi pur */
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+@media (max-width: 900px){
+    .cards, .cards-square{ grid-template-columns:repeat(2, 1fr); }
+    .section-logo img{ max-width:300px; }
+
+    :root{
+        --card-h:560px;
+        --body-h:130px;
+        --media-pad:16px;
+    }
+}
+@media (max-width: 600px){
+    .cards, .cards-square{ grid-template-columns:1fr; }
+    .site-logo .logo{ max-width:220px; }
+    .section-logo img{ max-width:240px; }
+
+    :root{
+        --card-h:520px;
+        --body-h:120px;
+        --media-pad:14px;
+    }
+}

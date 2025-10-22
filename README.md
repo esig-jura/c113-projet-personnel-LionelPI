@@ -4,8 +4,8 @@
 ## 1. 🎨 Présentation du projet
 
 ### Concept
-- Thème choisi : …
-- Public cible : …
+- Thème choisi : Présentation des personnages de Demon Slayer
+- Public cible : Fan de Manga
 - Objectifs du site : …
 
 ### Fonctionnalités prévues
