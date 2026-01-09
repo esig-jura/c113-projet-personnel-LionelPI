@@ -6,72 +6,83 @@
 ### Concept
 - Thème choisi : Présentation des personnages de Demon Slayer
 - Public cible : Fan de Manga
-- Objectifs du site : …
+
+- Objectifs du site : 
+
+Présenter les personnages principaux de l’univers
+
+Mettre en pratique les bases HTML5 et CSS moderne
+
+Créer un site responsive, accessible et structuré
 
 ### Fonctionnalités prévues
-- Navigation : …
-- Sections principales : …
-- Contenus proposés : …
+- Navigation : menu fixe permettant d’accéder aux sections
+- Sections principales : Introduction, Pourefendeurs, Piliers et Démons
+- Contenus proposés : Textes descriptifs, cartes des personnages avec images et descriptions
 
 ---
 
 ## 2. 📚 Parcours d'apprentissage
 
 ### Ressources utilisées
-- Plateformes (OpenClassrooms, MDN, freeCodeCamp, etc.)
-- Vidéos / tutoriels suivis
-- Articles ou documentations consultés
+- En ce qui concerne les ressources utilisé j'ai utilisé mes connaisaances de l'année passée
+ainsi que de quelques vidéos tutos sur youtube et de des cours.
 
 ### Progression
-- Semaine 4 : …
-- Semaine 6 : …
-- Semaine 8 : …
-- Semaine 10 : …
-- Semaine 11 : …
-- Semaine 12 : …
+- Semaine 4 : découverte des balises HTML et structure de page
+- Semaine 6 : mise en forme CSS, flexbox et grid
+- Semaine 8 : responsive design et media queries
+- Semaine 10 : accessibilité, images, typographie
+- Semaine 11 : accessibilité, images, typographie
+- Semaine 12 : nettoyage du code, optimisation et validation finale
 
 ---
 
 ## 3. 🛠️ Outils et méthodologie
 
 ### Environnement de travail
-- IDE : …
-- Navigateurs de test : …
+- IDE : WEB Storm
+- Navigateurs de test : Chrome, Firefox et Safari
 - Versioning : Git + GitHub
-- Validation : Validator W3C, PageSpeed Insights, Wave
+- Validation : 
+- W3C HTML Validator
+- W3C CSS Validator
+- PageSpeed Insights
 
 ### Méthodologie
 - Approche mobile-first
-- Commits réguliers et messages clairs
-- Tests sur plusieurs navigateurs et appareils
+- Tests réguliers sur différents écrans
+- Ajustements progressifs
+- Ajustements progressifs
 
 ### Choix de design
 - Palette de couleurs :  
-  - Couleur principale : `#XXXXXX` – …
-  - Couleur secondaire : `#XXXXXX` – …
-  - Couleur d’accent : `#XXXXXX` – …
-  - Couleur de texte : `#XXXXXX` – …
-  - Couleur de fond : `#XXXXXX` – …
-- Lien vers palette générée : …
+  - Couleur principale (header / éléments sombres) : #020617 — fond du header (--bg-header)
+  - Couleur secondaire (texte principal): #ffffff — texte global (--ink)
+  - Couleur d’accent rouge (rôles et éléments importants) : #e11d48 — rôles des cartes (--accent-red)
+  - Couleur d'accent cyan (liens et menu) : #e11d48 — rôles des cartes (--accent-red)
+  - Couleur de texte secondaire : rgba(255,255,255,0.85) — textes moins importants (--muted)
+  - Couleur de texte dans les cartes : #0f172a — texte dans les cartes (--card-ink)
+
 - Typographies :  
-  - Titres : … (fichiers dans `/fonts`)  
-  - Texte : … (fichiers dans `/fonts`)  
+  - Titres (menu, h1, h2) : Hanzo Display (locale, dossier /fonts, fichier HanzoDisplay.woff2) 
+  - Texte (paragraphes, contenu général) : Inter Variable (locale, dossier /fonts, fichier InterVariable.woff2)
 
 ---
 
 ## 4. ✅ Tests et validation
 
 ### Validation technique
-- HTML Validator : résultat …
-- CSS Validator : résultat …
+- HTML Validator : aucune erreur bloquante
+- CSS Validator : valide
 - PageSpeed Insights :  
-  - Performance : …/100  
-  - Accessibilité : …/100  
-  - Bonnes pratiques : …/100  
-  - SEO : …/100  
+  - Performance : 90/100  
+  - Accessibilité : 95/100  
+  - Bonnes pratiques : 100/100  
+  - SEO : 90/100  
 
 ### Compatibilité
-- Navigateurs testés : Chrome …, Firefox …, Safari …
+- Navigateurs testés : Chrome, Firefox, Safari 
 - Appareils testés : mobile, tablette, desktop
 
 ### Accessibilité
@@ -86,17 +97,19 @@
 ## 5. 🤖 Usage de l’IA (si applicable)
 
 ### IA utilisée
-- Nom et version : …
-- Contexte : génération de code / debug / recherche / rédaction
+- Nom et version : ChatGPT 5.2
+- Contexte : aide à la structuration, correction et optimisation
 
 ### Utilisation détaillée
-- Contenu généré avec l’IA : …
-- Explication et adaptation personnelle du code généré
+- Suggestions de structure HTML
+- Amélioration du CSS
+- Aide au débogage et au responsive
+- Adaptation et compréhension personnelle du code
 
 ### Proportion
-- Structure HTML : …% personnel / …% aidé
-- CSS : …% personnel / …% aidé
-- Responsive : …% personnel
+- Structure HTML : 70% personnel / 30% aidé
+- CSS : 60% personnel / 40% aidé
+- Responsive : 70% personnel
 - Tests et validation : 100% personnel
 
 ---
@@ -104,21 +117,24 @@
 ## 6. 🎯 Bilan personnel
 
 ### Ce que j’ai appris
-- Compétences techniques acquises  
-- Découvertes surprenantes  
-- Concepts difficiles maîtrisés  
+- Structurer une page HTML sémantique
+- Utiliser CSS Grid et Flexbox
+- Créer un menu sticky
+- Gérer le responsive design
+- Organiser un projet web proprement  
 
 ### Difficultés rencontrées
-- Problèmes techniques et solutions trouvées  
-- Moments de blocage et dépassement  
-- Aide reçue et sources  
+- Gestion du menu sticky
+- Problèmes d’ancres et de scroll
+- Ajustements responsive 
 
 ### Réussites et fiertés
-- Aspects du projet dont je suis fier  
-- Progrès constatés depuis le début  
-- Envies de développement futur  
+- Site entièrement fonctionnel
+- Respect strict des consignes
+- Design cohérent et lisible
+- Code propre et structuré 
 
 ### Améliorations possibles
-- Ce que j’ajouterais avec plus de temps  
-- Fonctionnalités bonus envisagées  
-- Compétences à approfondir  
+- Ajouter des pages individuelles par personnage
+- Ajouter des animations CSS plus avancées
+- Intégrer JavaScript pour des interactions supplémentaires

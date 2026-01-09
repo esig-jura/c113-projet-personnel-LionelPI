@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<!-- Lien d'accès direct au contenu (accessibilité) -->
-<a href="#contenu" class="skip-link">Aller au contenu</a>
 
-<!-- En-tête -->
-<header class="site-logo" role="banner">
-    <img src="images/logo.png" class="logo" alt="Logo Demon Slayer" />
+<!-- En-tête global -->
+<header class="site-header">
+    <div class="site-logo">
+        <img src="images/logo.png" class="logo" alt="Logo Demon Slayer" />
+    </div>
+
     <nav class="site-nav" aria-label="Navigation principale">
         <ul class="nav-list">
             <li><a href="#pourfendeurs">Pourfendeurs</a></li>
@@ -23,15 +24,15 @@
 </header>
 
 <!-- Contenu principal -->
-<main id="contenu" tabindex="-1">
+<main>
 
     <!-- Section Intro -->
     <section class="hero" aria-labelledby="hero-title">
         <h1 id="hero-title">Présentation des personnages principaux</h1>
         <p>
             On y retrouve les <strong>Pourfendeurs</strong> et les puissants <strong>Piliers</strong>
-            face à des <strong>Démons</strong> redoutables. Leur force vient autant de leurs combats que de leurs histoires
-            personnelles, marquées par la perte, la détermination et l’espoir.
+            face à des <strong>Démons</strong> redoutables. Leur force vient autant de leurs combats
+            que de leurs histoires personnelles, marquées par la perte, la détermination et l’espoir.
         </p>
     </section>
 
@@ -40,15 +41,19 @@
         <h2 id="h2-pourfendeurs">Pourfendeurs</h2>
         <p>
             Les <strong>Pourfendeurs</strong> sont les combattants du <strong>Corps des Demon Slayer</strong>.
-            Armés de leurs sabres nichirin et de techniques de respiration, ils affrontent les <strong>Démons</strong> au péril de leur vie.
-            Moins puissants que les <strong>Piliers</strong>, ils restent essentiels à la survie des humains.
+            Armés de leurs sabres nichirin et de techniques de respiration, ils affrontent les <strong>Démons</strong>
+            au péril de leur vie. Moins puissants que les <strong>Piliers</strong>, ils restent essentiels
+            à la survie des humains.
         </p>
 
-        <div class="cards cards-square">
+        <div class="cards">
+
             <!-- Tanjiro -->
-            <article class="card card-compact">
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/tanjiro.png" alt="Tanjiro Kamado, Pourfendeur de l'Eau" loading="lazy">
+                    <img src="images/tanjiro.png"
+                         alt="Tanjiro Kamado, Pourfendeur de l'Eau"
+                         loading="lazy" />
                     <figcaption class="sr-only">Tanjiro Kamado</figcaption>
                 </figure>
                 <div class="card-body">
@@ -58,9 +63,11 @@
             </article>
 
             <!-- Inosuke -->
-            <article class="card card-compact">
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/inosuke.png" alt="Inosuke Hashibara, Pourfendeur de la Bête" loading="lazy">
+                    <img src="images/inosuke.png"
+                         alt="Inosuke Hashibara, Pourfendeur de la Bête"
+                         loading="lazy" />
                     <figcaption class="sr-only">Inosuke Hashibara</figcaption>
                 </figure>
                 <div class="card-body">
@@ -70,9 +77,11 @@
             </article>
 
             <!-- Zenitsu -->
-            <article class="card card-compact">
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/zenitsu.png" alt="Zenitsu Agatsuma, Pourfendeur de la Foudre" loading="lazy">
+                    <img src="images/zenitsu.png"
+                         alt="Zenitsu Agatsuma, Pourfendeur de la Foudre"
+                         loading="lazy" />
                     <figcaption class="sr-only">Zenitsu Agatsuma</figcaption>
                 </figure>
                 <div class="card-body">
@@ -92,10 +101,14 @@
             Véritables protecteurs de l’humanité, ils affrontent les <strong>Démons</strong> les plus redoutables.
         </p>
 
-        <div class="cards cards-square">
-            <article class="card card-compact">
+        <div class="cards">
+
+            <!-- Giyu -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/giyu.png" alt="Giyu Tomioka, Pilier de l’Eau" loading="lazy">
+                    <img src="images/giyu.png"
+                         alt="Giyu Tomioka, Pilier de l’Eau"
+                         loading="lazy" />
                     <figcaption class="sr-only">Giyu Tomioka</figcaption>
                 </figure>
                 <div class="card-body">
@@ -104,9 +117,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Rengoku -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/rengoku.png" alt="Kyojuro Rengoku, Pilier de la Flamme" loading="lazy">
+                    <img src="images/rengoku.png"
+                         alt="Kyojuro Rengoku, Pilier de la Flamme"
+                         loading="lazy" />
                     <figcaption class="sr-only">Kyojuro Rengoku</figcaption>
                 </figure>
                 <div class="card-body">
@@ -115,9 +131,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Shinobu -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/shinobu.png" alt="Shinobu Kocho, Pilier de l’Insecte" loading="lazy">
+                    <img src="images/shinobu.png"
+                         alt="Shinobu Kocho, Pilier de l’Insecte"
+                         loading="lazy" />
                     <figcaption class="sr-only">Shinobu Kocho</figcaption>
                 </figure>
                 <div class="card-body">
@@ -126,9 +145,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Tengen -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/tengen.png" alt="Tengen Uzui, Pilier du Son" loading="lazy">
+                    <img src="images/tengen.png"
+                         alt="Tengen Uzui, Pilier du Son"
+                         loading="lazy" />
                     <figcaption class="sr-only">Tengen Uzui</figcaption>
                 </figure>
                 <div class="card-body">
@@ -137,9 +159,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Mitsuri -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/mitsuri.png" alt="Mitsuri Kanroji, Pilier de l’Amour" loading="lazy">
+                    <img src="images/mitsuri.png"
+                         alt="Mitsuri Kanroji, Pilier de l’Amour"
+                         loading="lazy" />
                     <figcaption class="sr-only">Mitsuri Kanroji</figcaption>
                 </figure>
                 <div class="card-body">
@@ -148,9 +173,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Obanai -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/obanai.png" alt="Obanai Iguro, Pilier du Serpent" loading="lazy">
+                    <img src="images/obanai.png"
+                         alt="Obanai Iguro, Pilier du Serpent"
+                         loading="lazy" />
                     <figcaption class="sr-only">Obanai Iguro</figcaption>
                 </figure>
                 <div class="card-body">
@@ -159,9 +187,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Gyomei -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/gyomei.png" alt="Gyomei Himejima, Pilier de la Roche" loading="lazy">
+                    <img src="images/gyomei.png"
+                         alt="Gyomei Himejima, Pilier de la Roche"
+                         loading="lazy" />
                     <figcaption class="sr-only">Gyomei Himejima</figcaption>
                 </figure>
                 <div class="card-body">
@@ -170,9 +201,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Sanemi -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/sanemi.png" alt="Sanemi Shinazugawa, Pilier du Vent" loading="lazy">
+                    <img src="images/sanemi.png"
+                         alt="Sanemi Shinazugawa, Pilier du Vent"
+                         loading="lazy" />
                     <figcaption class="sr-only">Sanemi Shinazugawa</figcaption>
                 </figure>
                 <div class="card-body">
@@ -181,9 +215,12 @@
                 </div>
             </article>
 
-            <article class="card card-compact">
+            <!-- Muichiro -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/muichiro.png" alt="Muichiro Tokito, Pilier de la Brume" loading="lazy">
+                    <img src="images/muichiro.png"
+                         alt="Muichiro Tokito, Pilier de la Brume"
+                         loading="lazy" />
                     <figcaption class="sr-only">Muichiro Tokito</figcaption>
                 </figure>
                 <div class="card-body">
@@ -198,15 +235,19 @@
     <section class="section" id="demons" aria-labelledby="h2-demons">
         <h2 id="h2-demons">Les Démons</h2>
         <p>
-            Les <strong>Démons</strong>, créés par <strong>Muzan Kibutsuji</strong>, possèdent une force surhumaine et des pouvoirs singuliers.
-            Les plus puissants forment les <strong>Six Lunes Supérieures</strong>, adversaires ultimes du Corps des Pourfendeurs.
+            Les <strong>Démons</strong>, créés par <strong>Muzan Kibutsuji</strong>, possèdent une force surhumaine
+            et des pouvoirs singuliers. Les plus puissants forment les <strong>Six Lunes Supérieures</strong>,
+            adversaires ultimes du Corps des Pourfendeurs.
         </p>
 
-        <div class="cards cards-square">
-            <!-- Nezuko (alliée mais démon) -->
-            <article class="card card-compact">
+        <div class="cards">
+
+            <!-- Nezuko -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/nezuko.png" alt="Nezuko Kamado, sœur de Tanjiro" loading="lazy">
+                    <img src="images/nezuko.png"
+                         alt="Nezuko Kamado, sœur de Tanjiro"
+                         loading="lazy" />
                     <figcaption class="sr-only">Nezuko Kamado</figcaption>
                 </figure>
                 <div class="card-body">
@@ -216,9 +257,11 @@
             </article>
 
             <!-- Muzan -->
-            <article class="card card-compact">
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/muzan.png" alt="Muzan Kibutsuji, Roi des Démons" loading="lazy">
+                    <img src="images/muzan.png"
+                         alt="Muzan Kibutsuji, Roi des Démons"
+                         loading="lazy" />
                     <figcaption class="sr-only">Muzan Kibutsuji</figcaption>
                 </figure>
                 <div class="card-body">
@@ -227,10 +270,12 @@
                 </div>
             </article>
 
-            <!-- Lune Supérieure 1 : Kokushibo -->
-            <article class="card card-compact">
+            <!-- Kokushibo -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/kokushibo.png" alt="Kokushibo, Première Lune Supérieure" loading="lazy">
+                    <img src="images/kokushibo.png"
+                         alt="Kokushibo, Première Lune Supérieure"
+                         loading="lazy" />
                     <figcaption class="sr-only">Kokushibo</figcaption>
                 </figure>
                 <div class="card-body">
@@ -239,10 +284,12 @@
                 </div>
             </article>
 
-            <!-- Lune Supérieure 2 : Doma -->
-            <article class="card card-compact">
+            <!-- Doma -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/doma.png" alt="Doma, Deuxième Lune Supérieure" loading="lazy">
+                    <img src="images/doma.png"
+                         alt="Doma, Deuxième Lune Supérieure"
+                         loading="lazy" />
                     <figcaption class="sr-only">Doma</figcaption>
                 </figure>
                 <div class="card-body">
@@ -251,12 +298,12 @@
                 </div>
             </article>
 
-            <!-- Lune Supérieure 3 : Akaza -->
-            <article class="card card-compact">
+            <!-- Akaza -->
+            <article class="card">
                 <figure class="card-media">
-                    <!-- Conserve ton nom de fichier si tu utilises celui-ci -->
-                    <img src="images/Akaza-Upper-Moon-Three-demon-slayer-Kimetsu-no-Yaiba-transparent-PNG-image-jpg-removebg-preview (1).png"
-                         alt="Akaza, Troisième Lune Supérieure" loading="lazy">
+                    <img src="images/akaza.png"
+                         alt="Akaza, Troisième Lune Supérieure"
+                         loading="lazy" />
                     <figcaption class="sr-only">Akaza</figcaption>
                 </figure>
                 <div class="card-body">
@@ -265,10 +312,12 @@
                 </div>
             </article>
 
-            <!-- Lune Supérieure 4 : Hantengu -->
-            <article class="card card-compact">
+            <!-- Hantengu -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/Hantengu.png" alt="Hantengu, Quatrième Lune Supérieure" loading="lazy">
+                    <img src="images/Hantengu.png"
+                         alt="Hantengu, Quatrième Lune Supérieure"
+                         loading="lazy" />
                     <figcaption class="sr-only">Hantengu</figcaption>
                 </figure>
                 <div class="card-body">
@@ -277,10 +326,12 @@
                 </div>
             </article>
 
-            <!-- Lune Supérieure 5 : Gyokko -->
-            <article class="card card-compact">
+            <!-- Gyokko -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/gyokko.png" alt="Gyokko, Cinquième Lune Supérieure" loading="lazy">
+                    <img src="images/gyokko.png"
+                         alt="Gyokko, Cinquième Lune Supérieure"
+                         loading="lazy" />
                     <figcaption class="sr-only">Gyokko</figcaption>
                 </figure>
                 <div class="card-body">
@@ -289,10 +340,12 @@
                 </div>
             </article>
 
-            <!-- Lune Supérieure 6 : Gyutaro -->
-            <article class="card card-compact">
+            <!-- Gyutaro -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/gyutaro.png" alt="Gyutaro, Sixième Lune Supérieure" loading="lazy">
+                    <img src="images/gyutaro.png"
+                         alt="Gyutaro, Sixième Lune Supérieure"
+                         loading="lazy" />
                     <figcaption class="sr-only">Gyutaro</figcaption>
                 </figure>
                 <div class="card-body">
@@ -301,10 +354,12 @@
                 </div>
             </article>
 
-            <!-- Lune Supérieure 6 : Daki -->
-            <article class="card card-compact">
+            <!-- Daki -->
+            <article class="card">
                 <figure class="card-media">
-                    <img src="images/daki.png" alt="Daki, Sixième Lune Supérieure" loading="lazy">
+                    <img src="images/daki.png"
+                         alt="Daki, Sixième Lune Supérieure"
+                         loading="lazy" />
                     <figcaption class="sr-only">Daki</figcaption>
                 </figure>
                 <div class="card-body">
@@ -318,13 +373,9 @@
 </main>
 
 <!-- Pied de page -->
-<footer class="site-footer" role="contentinfo">
-    <p>&copy; <span id="year"></span>Demon Slayer</p>
-    <ul class="footer-links">
-        <li><a href="#pourfendeurs">Pourfendeurs</a></li>
-        <li><a href="#piliers">Piliers</a></li>
-        <li><a href="#demons">Démons</a></li>
-    </ul>
+<footer class="site-footer">
+    <p>Site Fan Demon Slayer par Lionel Piquerez</p>
 </footer>
+
 </body>
 </html>
